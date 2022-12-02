@@ -1,0 +1,44 @@
+.criative{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, 50%);
+}
+
+.criative a{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.criative a::before {
+    position: absolute;
+    top: -12px;
+    left: -8px;
+    content: '';
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    width: 167px;
+    height: 90px;
+    transition: all .9s ease;
+}
+
+.criative a::after {
+    position: absolute;
+    top: -3px;
+    left: -18px;
+    content: '';
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 188px;
+    height: 69px;
+    transition: all .9s ease;
+}
+
+.criative a:hover::before {transform: rotateY(71deg);}
+
+.criative a:hover::after {
+    transform: rotatex(72deg);
+}
